@@ -1,0 +1,20 @@
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+
+.marketing {
+  h2 {
+    font-weight: 400;
+  }
+  .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    p {
+      margin: {
+        right: .75rem;
+        left: .75rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-collapse {
+  flex-direction: row-reverse;
+}
+
+.nav-item {
+  border-radius: 5px;
+  &:hover {
+    background-color: $body-color-secondary;
+  }
+}
+
+.navbar-light .navbar-nav {
+  .nav-link {
+    color: $body-color;
+    padding: .5rem .8rem;
+  }
+  .nav-link:hover {
+    color: $body-color;
+  }
+  .nav-link.active {
+    border-radius: 5px;
+    background-color: $body-color-secondary;
+    color: $body-color;
+  }
+}

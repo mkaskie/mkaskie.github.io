@@ -1,0 +1,21 @@
+$body-bg: white;
+$body-color: #4B80C3;
+$link-hover-color: rgba($body-color, .6);
+$link-color: #4B80C3;
+$link-decoration: none;
+/*$link-shade-percentage: 20% !default;*/
+/*$link-hover-decoration: underline;*/
+$spacer: 2rem !default;
+$font-family-base: "Poppins", sans-serif;
+$body-color-secondary: #e0eeff;
+
+$accordion-border-width: 0;
+$accordion-border-radius: 0;
+$accordion-body-padding-y: 2rem;
+$accordion-button-padding-y: 2rem;
+$accordion-button-padding-x: 2rem;
+$accordion-button-focus-border-color: $body-color;
+$accordion-button-active-bg: $body-color-secondary;
+$accordion-button-active-color: $body-color;
+$accordion-button-focus-border-color: none;
+$accordion-button-focus-box-shadow: none;

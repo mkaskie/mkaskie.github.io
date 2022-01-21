@@ -1,0 +1,58 @@
+.eyebrow-wrapper {
+    position: relative;
+    display: inline-flex;
+}
+
+.eyebrow {
+    &:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 40px;
+    background-color: white;
+    }
+}
+
+.eyebrow-blue-left {
+    &:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    top: -20px;
+    left: 0;
+    margin: auto;
+    width: 40px;
+    background-color: $body-color;
+    }
+}
+
+.eyebrow-blue-left-below {
+    &:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    top: 40px;
+    left: 0;
+    margin: auto;
+    width: 40px;
+    background-color: $body-color;
+    }
+}
+
+.eyebrow-blue-center {
+    &:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 40px;
+    background-color: $body-color;
+    }
+}

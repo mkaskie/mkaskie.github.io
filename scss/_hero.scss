@@ -1,0 +1,17 @@
+.hero {
+  background-image: url("../assets/hero-bg-image.png");
+  background-size: cover;
+  height: 60vh;
+  background-position: center;
+}
+
+.hero-wrapper {
+  margin: 5rem auto;
+  h1 {
+    font-weight: 600;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+}

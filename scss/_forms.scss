@@ -1,0 +1,18 @@
+.alert {
+    padding: 1rem 1rem;
+    p {
+        padding-right: 1rem;
+        margin-bottom: 0; 
+    }
+}
+
+.alert-dismissible {
+    .btn-close {
+        padding: 1.25rem 2rem;
+    }
+}
+
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #f9fbfd;
+}

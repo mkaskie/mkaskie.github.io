@@ -1,0 +1,52 @@
+.btn {
+  padding: .75rem 2rem;
+  border-radius: 2rem;
+}
+
+.btn-primary {
+  background-color: $body-color;
+  border: 3px solid $body-color;
+  &:hover {
+    background-color: lighten($body-color, 5%);
+    color: white;
+    border: 3px solid lighten($body-color, 5%);
+  }
+  &.disabled {
+    background-color: #869ab8;
+    border: 3px solid #869ab8;
+  }
+}
+
+.btn-secondary {
+   color: $body-color;
+   background-color: #E0EEFF;
+   border: none;
+   &:hover {
+     background-color: darken(#E0EEFF, 5%);
+     color: $body-color;
+     border: none;
+   }
+}
+
+.btn-primary-body {
+  color: white;
+  background-color: $body-color;
+  border: none;
+  border-radius: 8px;
+  &:hover {
+    background-color: lighten($body-color, 5%);
+    color: white;
+    border: none;
+  }
+}
+
+.btn-outline-primary {
+  border: 3px solid #4B80C3;
+  color: #4B80C3;
+  background-color: #E0EEFF;
+  &:hover {
+    background-color: darken(#E0EEFF, 5%);
+    color: #4B80C3;
+    border: 3px solid $body-color;
+  }
+}
