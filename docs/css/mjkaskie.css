@@ -7490,6 +7490,10 @@ footer {
     font-weight: 400;
     font-size: 1.5rem; }
 
+.about-hero {
+  background-color: #4B80C3;
+  color: white; }
+
 #about .row {
   flex-wrap: wrap-reverse; }
 
