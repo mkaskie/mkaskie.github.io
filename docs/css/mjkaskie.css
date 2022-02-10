@@ -7463,6 +7463,9 @@ footer {
   background-color: #e0eeff;
   color: #4B80C3; }
 
+.nav-arrow {
+  padding: 0 1rem; }
+
 /* MARKETING CONTENT
 -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
