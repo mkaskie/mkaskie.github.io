@@ -9,6 +9,58 @@
   }
 }
 
+/* BEGIN Hero */
+
+.grid-left-hero {
+  background-color: $body-color;
+  color: white;
+  transform: skew(-9deg);
+  z-index: 1;
+  text-align: end;
+  &::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: $body-color;
+    top: 0;
+    left: 0;
+    transform: skew(9deg);
+    z-index: -1;
+  }
+  .wrapper {
+    padding: 6rem 0;
+    margin: 0 2rem;
+    transform: skew(9deg);
+  }
+}
+
+.grid-right-hero {
+  background-color: $body-color-secondary;
+  transform: skew(-9deg);
+  z-index: 1;
+  &::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: $body-color-secondary;
+    top: 0;
+    right: 0;
+    transform: skew(9deg);
+    z-index: -1;
+  }
+  .wrapper {
+    padding: 6rem 0;
+    transform: skew(9deg);
+    margin: 0 2rem;
+  }
+  button {
+    margin-left: 2rem;
+  }
+}
+
+/* END Hero */
 
 .grid-left {
   .wrapper {
@@ -17,7 +69,7 @@
 }
 
 .grid-right {
-  background-color: $body-color-secondary;
+  background-color: #F9FAFC;
   .wrapper {
     padding: 6rem 0;
   }

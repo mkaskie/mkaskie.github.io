@@ -7500,11 +7500,55 @@ footer {
 #about .row {
   flex-wrap: wrap-reverse; }
 
+/* BEGIN Hero */
+.grid-left-hero {
+  background-color: #4B80C3;
+  color: white;
+  transform: skew(-9deg);
+  z-index: 1;
+  text-align: end; }
+  .grid-left-hero::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: #4B80C3;
+    top: 0;
+    left: 0;
+    transform: skew(9deg);
+    z-index: -1; }
+  .grid-left-hero .wrapper {
+    padding: 6rem 0;
+    margin: 0 2rem;
+    transform: skew(9deg); }
+
+.grid-right-hero {
+  background-color: #e0eeff;
+  transform: skew(-9deg);
+  z-index: 1; }
+  .grid-right-hero::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: #e0eeff;
+    top: 0;
+    right: 0;
+    transform: skew(9deg);
+    z-index: -1; }
+  .grid-right-hero .wrapper {
+    padding: 6rem 0;
+    transform: skew(9deg);
+    margin: 0 2rem; }
+  .grid-right-hero button {
+    margin-left: 2rem; }
+
+/* END Hero */
 .grid-left .wrapper {
   padding: 6rem 0; }
 
 .grid-right {
-  background-color: #e0eeff; }
+  background-color: #F9FAFC; }
   .grid-right .wrapper {
     padding: 6rem 0; }
   .grid-right a {
