@@ -1,3 +1,5 @@
+/* Begin Old Hero */
+
 .hero {
   background-image: url("../assets/hero-bg-image.png");
   background-size: cover;
@@ -15,3 +17,113 @@
     font-size: 1.5rem;
   }
 }
+
+/* END Old Hero */
+
+/* BEGIN Test Hero */
+
+.hero-test {
+  position: relative;
+  height: 60vh;
+}
+
+.hero-test-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $body-color-secondary;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+
+.hero-test-container {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.hero-test-wrapper {
+  transform: skewY(6deg);
+}
+
+/* END Test Hero */
+
+/* BEGIN Test Hero 2 */
+
+.hero-test-2 {
+  position: relative;
+  background-color: $body-color-secondary;
+  height: 90vh;
+  @include media-breakpoint-up(md) {
+    height: 70vh;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 65vh;
+  }
+}
+
+.hero-svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 20vh;
+}
+
+/* END Test Hero 2 */
+
+/* BEGIN About Hero */
+
+.grid-left-hero {
+  background-color: $body-color;
+  color: white;
+  transform: skew(-9deg);
+  z-index: 1;
+  text-align: end;
+  &::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: $body-color;
+    top: 0;
+    left: 0;
+    transform: skew(9deg);
+    z-index: -1;
+  }
+  .wrapper {
+    padding: 6rem 0;
+    margin: 0 2rem;
+    transform: skew(9deg);
+  }
+}
+
+.grid-right-hero {
+  background-color: $body-color-secondary;
+  transform: skew(-9deg);
+  z-index: 1;
+  &::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background: $body-color-secondary;
+    top: 0;
+    right: 0;
+    transform: skew(9deg);
+    z-index: -1;
+  }
+  .wrapper {
+    padding: 6rem 0;
+    transform: skew(9deg);
+    margin: 0 2rem;
+  }
+  button {
+    margin-left: 2rem;
+  }
+}
+
+/* END About Hero */
