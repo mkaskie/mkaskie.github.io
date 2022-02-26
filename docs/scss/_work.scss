@@ -1,3 +1,26 @@
+/* BEGIN Style individual Work pages */
+
+.work-page {
+  h2 {
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  img {
+    border-radius: 6px;
+    filter: drop-shadow(0px 10px 60px rgba(0, 0, 0, 0.2));
+    width: 90%;
+  }
+  .white-box {
+    background-color: $body-color-secondary;
+    border-radius: 6px;
+    padding: 2rem;
+  }
+}
+
+/* END Style individual Work pages */
+
+/* BEGIN Old Work Section
+
 .work {
   background-color: #4B80C3;
   color: white;
@@ -19,6 +42,10 @@
     height: 100px;
   }
 }
+
+END Old Work Section */
+
+/* Style icons for "This website was custom built" section */ 
 
 .web-icons {
   max-width: 1000px;

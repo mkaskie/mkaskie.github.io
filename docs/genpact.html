@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -12,7 +13,7 @@
     rel="stylesheet">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/mjkaskie.css">
-  <title>Mitchell Kaskie | About</title>
+  <title>Mitchell Kaskie | UX/UI Designer and Developer</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TP5JX4PJF7"></script>
   <script>
@@ -23,9 +24,10 @@
     gtag('config', 'G-TP5JX4PJF7');
   </script>
 </head>
-<body>
+
+<body data-bs-spy="scroll" data-bs-target="#scrollspy-navbar" id="home">
   <header>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light" id="scrollspy-navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
           <img src="assets/website-logo-blue.png" width="60" alt="">
@@ -41,7 +43,7 @@
             </li>
             <li class="nav-arrow">&rsaquo;</li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page">About</a>
+              <a class="nav-link active" aria-current="page" href="#about">Genpact</a>
             </li>
           </ul>
           <!--<form class="d-flex">
@@ -53,188 +55,27 @@
     </nav>
   </header>
   <main>
-    <!--<div class="container" style="padding: 4rem 0 1rem 0;">
-      <nav
-        style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
-        aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="/#work">Work</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Genpact</li>
-        </ol>
-      </nav>-->
-    </div>
-    <!--<div class="container-fluid about-hero">
+    <div class="container-fluid py-5 work-page">
       <div class="container">
         <div class="row">
-          <div class="hero-wrapper">
-            <div class="col">
-              <h1 class="display-4">About</h1>
-              <h2>.mjkaskie</h2>
-              <h3>Originally from Kansas City, living in Dallas, Texas</h3>
-              <button type="button" class="btn btn-outline-primary"
-                onclick="document.location='#contact'">Contact</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>-->
-    <div class="container-fluid" style="overflow: hidden;">
-      <div class="row">
-        <div class="col-4 grid-left-hero">
-          <div class="wrapper">
-            <h1>About</h1>
-          </div>
-        </div>
-        <div class="col-8 grid-right-hero">
-          <div class="wrapper">
-            <h2 class="fs-1">.mjkaskie</h2>
-            <button type="button" class="btn btn-outline-primary"
-            onclick="document.location='#contact'">Get in Touch</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-md-5 d-flex justify-content-center grid-left">
-          <div class="wrapper">
+          <div class="col">
             <div class="eyebrow-wrapper">
               <div class="eyebrow-blue-left">
-                <h2>Fast facts</h2>
+                <h2>Genpact & Baker Hughes</h2>
               </div>
             </div>
-            <ul class="about-list">
-              <a href="https://goo.gl/maps/2B8cVoEBeTwZn1Kb8" target="_blank">
-                <li class="about-list-item">
-                  <div class="about-list-icon p-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="29.818" height="40" viewBox="0 0 29.818 40">
-                      <path id="ic_place_24px"
-                        d="M19.909,2C11.666,2,5,8.26,5,16,5,26.5,19.909,42,19.909,42S34.818,26.5,34.818,16C34.818,8.26,28.152,2,19.909,2Zm0,19a5.172,5.172,0,0,1-5.325-5,5.172,5.172,0,0,1,5.325-5,5.172,5.172,0,0,1,5.325,5A5.172,5.172,0,0,1,19.909,21Z"
-                        transform="translate(-5 -2)" fill="#4b80c3" />
-                    </svg>
-                  </div>
-                  <div class="about-list-name">
-                    <span>Dallas, TX</span>
-                  </div>
-                </li>
-              </a>
-            </ul>
-            <ul class="about-list">
-              <li class="about-list-item">
-                <div class="about-list-icon p-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="42.105" height="40" viewBox="0 0 42.105 40">
-                    <path id="ic_work_24px"
-                      d="M39.895,10.421H31.474V6.211A4.2,4.2,0,0,0,27.263,2H18.842a4.2,4.2,0,0,0-4.211,4.211v4.211H6.211a4.178,4.178,0,0,0-4.189,4.211L2,37.789A4.2,4.2,0,0,0,6.211,42H39.895a4.2,4.2,0,0,0,4.211-4.211V14.632A4.2,4.2,0,0,0,39.895,10.421Zm-12.632,0H18.842V6.211h8.421Z"
-                      transform="translate(-2 -2)" fill="#4b80c3" />
-                  </svg>
-                </div>
-                <div class="about-list-name">
-                  <span><a href="https://www.genpact.com/" target="_blank">Genpact</a></span>
-                </div>
-              </li>
-            </ul>
-            <ul class="about-list">
-              <li class="about-list-item">
-                <div class="about-list-icon p-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="36.19" height="40" viewBox="0 0 36.19 40">
-                    <path id="ic_account_balance_24px"
-                      d="M5.81,18.143V31.476h5.714V18.143Zm11.429,0V31.476h5.714V18.143ZM2,41H38.19V35.286H2ZM28.667,18.143V31.476h5.714V18.143ZM20.1,1,2,10.524v3.81H38.19v-3.81Z"
-                      transform="translate(-2 -1)" fill="#4b80c3" />
-                  </svg>
-                </div>
-                <div class="about-list-name">
-                  <span><a href="https://www.uark.edu/" target="_blank">University of Arkansas</a></span>
-                </div>
-              </li>
-            </ul>
-            <ul class="about-list">
-              <li class="about-list-item">
-                <div class="about-list-icon p-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="48.889" height="40" viewBox="0 0 48.889 40">
-                    <path id="ic_school_24px"
-                      d="M9.889,25.622v8.889L25.444,43,41,34.511V25.622L25.444,34.111ZM25.444,3,1,16.333,25.444,29.667l20-10.911V34.111h4.444V16.333Z"
-                      transform="translate(-1 -3)" fill="#4b80c3" />
-                  </svg>
-                </div>
-                <div class="about-list-name">
-                  <span><a
-                      href="http://catalog.uark.edu/undergraduatecatalog/collegesandschools/sammwaltoncollegeofbusiness/marketingmktg/"
-                      target="blank">Marketing</a></span>
-                </div>
-              </li>
-            </ul>
-            <ul class="about-list">
-              <li class="about-list-item">
-                <div class="about-list-icon p-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="47.059" height="40" viewBox="0 0 47.059 40">
-                    <path id="ic_home_24px" d="M20.824,43V28.882h9.412V43H42V24.176h7.059L25.529,3,2,24.176H9.059V43Z"
-                      transform="translate(-2 -3)" fill="#4b80c3" />
-                  </svg>
-                </div>
-                <div class="about-list-name">
-                  <span><a href="https://goo.gl/maps/nQoZeLJ5Fk22xL8H9" target="blank">Prairie Village, KS</a></span>
-                </div>
-              </li>
-            </ul>
           </div>
         </div>
-        <div class="col-12 col-md-7 d-flex justify-content-center grid-right">
-          <div class="wrapper w-75">
-            <h3>Originally from Kansas City, living in Dallas, Texas</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p><strong>Hobbies & Interests</strong></p>
-            <p>🎧 EDM</p>
-            <p>🏃🏼 Fitness</p>
-            <p>🏈 Sports</p>
-            <p>🧑🏼‍💻 Coding</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div style="background-color: #E0EEFF;" class="container-fluid py-5" id="contact">
-      <div class="container">
         <div class="row">
-          <div class="col text-center pb-4">
-            <div class="eyebrow-wrapper">
-              <div class="eyebrow-blue-center">
-                <h2>Say 'What's Up'</h2>
-              </div>
-            </div>
-            <h3>Hit me up using the form below</h3>
+          <div class="col-12 col-sm-6">
+            <img src="/assets/screenshots/bakerhughes-screenshot.jpg" alt="Baker Hughes Website Screenshot">
           </div>
-        </div>
-        <div class="container" style="max-width: 840px;">
-          <div class="row">
-            <div class="col-12">
-              <form action="contact.php" id="contact-form" method="post" role="form" class="needs-validation"
-                novalidate>
-                <div class="messages"></div>
-                <div class="row">
-                  <div class="col-12 col-md-6 mb-3">
-                    <div class="form-floating">
-                      <input type="text" class="form-control" id="name" name="user_name" placeholder="Name" required
-                        data-error="Name is required.">
-                      <label for="name" class="form-label">Full Name</label>
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 mb-3">
-                    <div class="form-floating">
-                      <input type="email" class="form-control" id="email" name="user_email" placeholder="Email Address"
-                        required>
-                      <label for="email" class="form-label">Email Address</label>
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="mb-3 form-floating">
-                  <textarea class="form-control" id="message" name="user_message" placeholder="Message"
-                    style="height: 140px" required></textarea>
-                  <label for="message" class="form-label">What can I help you out with?</label>
-                  <div class="help-block with-errors"></div>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
+          <div class="col-12 col-sm-6">
+            <h1 class="fs-2">Web Content Specialist</h1>
+            <div class="white-box">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue sed morbi sed enim magnis ultrices
+                pharetra quis nibh. Vulputate massa mattis cursus duis enim enim varius. Egestas vitae pellentesque ut
+                et. Viverra blandit faucibus vitae ac.</p>
             </div>
           </div>
         </div>
@@ -311,4 +152,5 @@
     integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
   <script src="contact.js"></script>
 </body>
+
 </html>

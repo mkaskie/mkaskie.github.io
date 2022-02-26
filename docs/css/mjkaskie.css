@@ -7479,119 +7479,20 @@ footer {
     margin-right: .75rem;
     margin-left: .75rem; }
 
-/* Begin Old Hero */
+/* BEGIN Home Hero */
 .hero {
-  background-image: url("../assets/hero-bg-image.png");
-  background-size: cover;
-  height: 60vh;
-  background-position: center; }
-
-.hero-wrapper {
-  margin: 5rem auto; }
-  .hero-wrapper h1, .hero-wrapper .h1 {
-    font-weight: 600; }
-  .hero-wrapper h2, .hero-wrapper .h2 {
-    font-weight: 400;
-    font-size: 1.5rem; }
-
-/* END Old Hero */
-/* BEGIN Test Hero */
-.hero-test {
-  position: relative;
-  height: 60vh; }
-
-.hero-test-bg {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #e0eeff;
-  transform: skewY(-6deg);
-  transform-origin: top left; }
-
-.hero-test-container {
-  margin-top: 10rem;
-  margin-bottom: 10rem; }
-
-.hero-test-wrapper {
-  transform: skewY(6deg); }
-
-/* END Test Hero */
-/* BEGIN Test Hero 2 */
-.hero-test-2 {
-  position: relative;
-  background-color: #e0eeff;
-  height: 90vh; }
-  @media (min-width: 768px) {
-    .hero-test-2 {
-      height: 70vh; } }
-  @media (min-width: 992px) {
-    .hero-test-2 {
-      height: 65vh; } }
+  background-color: #e0eeff; }
 
 .hero-svg {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 20vh; }
-
-/* END Test Hero 2 */
-/* BEGIN About Hero */
-.grid-left-hero {
-  background-color: #4B80C3;
-  color: white;
-  transform: skew(-9deg);
-  z-index: 1;
-  text-align: end; }
-  .grid-left-hero::before {
-    content: "";
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    background: #4B80C3;
-    top: 0;
-    left: 0;
-    transform: skew(9deg);
-    z-index: -1; }
-  .grid-left-hero .wrapper {
-    padding: 6rem 0;
-    margin: 0 2rem;
-    transform: skew(9deg); }
-
-.grid-right-hero {
   background-color: #e0eeff;
-  transform: skew(-9deg);
-  z-index: 1; }
-  .grid-right-hero::after {
-    content: "";
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    background: #e0eeff;
-    top: 0;
-    right: 0;
-    transform: skew(9deg);
-    z-index: -1; }
-  .grid-right-hero .wrapper {
-    padding: 6rem 0;
-    transform: skew(9deg);
-    margin: 0 2rem; }
-  .grid-right-hero button {
-    margin-left: 2rem; }
+  width: 100%;
+  height: 100px; }
 
-/* END About Hero */
+/* BEGIN About Hero */
 .about-hero {
   background-color: #4B80C3;
   color: white; }
 
-#about .row {
-  flex-wrap: wrap-reverse; }
-
-/* BEGIN Hero */
 .grid-left-hero {
   background-color: #4B80C3;
   color: white;
@@ -7634,7 +7535,30 @@ footer {
   .grid-right-hero button {
     margin-left: 2rem; }
 
-/* END Hero */
+/* Begin Old Hero
+
+.hero {
+  background-image: url("../assets/hero-bg-image.png");
+  background-size: cover;
+  height: 60vh;
+  background-position: center;
+}
+
+.hero-wrapper {
+  margin: 5rem auto;
+  h1 {
+    font-weight: 600;
+  }
+  h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+}
+
+END Old Hero */
+#about .row {
+  flex-wrap: wrap-reverse; }
+
 .grid-left .wrapper {
   padding: 6rem 0; }
 
@@ -7670,23 +7594,48 @@ footer {
 .about-list-name {
   padding: .6rem .5rem .5rem .5rem; }
 
+/* BEGIN Style individual Work pages */
+.work-page h2, .work-page .h2 {
+  font-weight: 500;
+  margin-bottom: 2rem; }
+
+.work-page img {
+  border-radius: 6px;
+  filter: drop-shadow(0px 10px 60px rgba(0, 0, 0, 0.2));
+  width: 90%; }
+
+.work-page .white-box {
+  background-color: #e0eeff;
+  border-radius: 6px;
+  padding: 2rem; }
+
+/* END Style individual Work pages */
+/* BEGIN Old Work Section
+
 .work {
   background-color: #4B80C3;
-  color: white; }
+  color: white;
+}
 
-.work-logos svg {
-  padding: 2rem;
-  width: 100%;
-  height: 125px;
-  fill: white;
-  transition: all .2s ease-in-out; }
-  .work-logos svg:hover {
-    transform: scale(1.1); }
+.work-logos {
+  svg {
+    padding: 2rem;
+    width: 100%;
+    height: 125px;
+    fill: white;
+    transition: all .2s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  img {
+    padding: 1rem;
+    height: 100px;
+  }
+}
 
-.work-logos img {
-  padding: 1rem;
-  height: 100px; }
-
+END Old Work Section */
+/* Style icons for "This website was custom built" section */
 .web-icons {
   max-width: 1000px;
   padding: 4rem; }
@@ -7945,6 +7894,10 @@ footer {
 
 .tab-icon img {
   width: 80px; }
+
+.tab-image img {
+  border-radius: 6px;
+  filter: drop-shadow(0px 10px 60px rgba(0, 0, 0, 0.2)); }
 
 /*
 
