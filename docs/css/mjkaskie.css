@@ -7482,6 +7482,10 @@ footer {
 /* BEGIN Home Hero */
 .hero {
   background-color: #e0eeff; }
+  .hero a {
+    color: #869ab8; }
+    .hero a:hover {
+      text-decoration: underline; }
 
 .hero-svg {
   background-color: #e0eeff;

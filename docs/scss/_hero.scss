@@ -2,6 +2,12 @@
 
 .hero {
   background-color: $body-color-secondary;
+  a {
+    color: #869ab8;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .hero-svg {
