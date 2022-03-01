@@ -1,4 +1,6 @@
-#about {
+/* Style the row and containers */
+
+.about {
   .row {
     flex-wrap: wrap-reverse;
   }
@@ -22,6 +24,8 @@
     }
   }
 }
+
+/* Style the Fast facts list */
 
 .about-list {
   list-style: none;
@@ -53,4 +57,17 @@
 
 .about-list-name {
   padding: .6rem .5rem .5rem .5rem;
+}
+
+.hobbies {
+  p {
+    font-size: .8rem;
+    background-color: $body-color-secondary;
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: 1.5rem;
+    &:hover {
+        background-color: darken($body-color-secondary, 5%);
+    }
+  }
 }

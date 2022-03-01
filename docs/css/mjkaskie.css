@@ -7560,7 +7560,8 @@ footer {
 }
 
 END Old Hero */
-#about .row {
+/* Style the row and containers */
+.about .row {
   flex-wrap: wrap-reverse; }
 
 .grid-left .wrapper {
@@ -7575,6 +7576,7 @@ END Old Hero */
     .grid-right a:hover {
       text-decoration: underline; }
 
+/* Style the Fast facts list */
 .about-list {
   list-style: none;
   padding-left: 0; }
@@ -7597,6 +7599,15 @@ END Old Hero */
 
 .about-list-name {
   padding: .6rem .5rem .5rem .5rem; }
+
+.hobbies p {
+  font-size: .8rem;
+  background-color: #e0eeff;
+  display: inline-block;
+  padding: .5rem 1rem;
+  border-radius: 1.5rem; }
+  .hobbies p:hover {
+    background-color: #c7e0ff; }
 
 /* BEGIN Style individual Work pages */
 .work-page h2, .work-page .h2 {
