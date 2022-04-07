@@ -11340,6 +11340,9 @@ END Old Hero */
 .about .row {
   flex-wrap: wrap-reverse;
 }
+.about h3, .about .h3 {
+  font-weight: 400;
+}
 
 .grid-left .wrapper {
   padding: 6rem 0;
@@ -11478,8 +11481,8 @@ END Old Work Section */
 .web-icons .visual-studio:hover {
   fill: #39AAF3;
 }
-.web-icons .xd:hover {
-  fill: #F75EEE;
+.web-icons .figma:hover {
+  fill: #EA4C1E;
 }
 
 .services {
