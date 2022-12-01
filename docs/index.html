@@ -29,7 +29,7 @@
   </script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#scrollspy-navbar" id="home">
+<body data-bs-spy="scroll" data-bs-target="#scrollspy-navbar" data-offset="80" id="home">
   <header>
     <!-- BEGIN Nav -->
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light" id="scrollspy-navbar">
@@ -312,12 +312,12 @@
             <div>Howdy! My name is</div>
             <h1 class="display-4">Mitchell Kaskie.</h1>
             <h2>I am a digital marketer, web designer and developer. I currently work as a Web Content Specialist
-              at
+              for
               <a href="https://www.genpact.com/" target="_blank">Genpact</a>.
             </h2>
             <button class="btn btn-primary" onclick="document.location='#contact'">Contact</button>
-            <button type="button" class="btn btn-outline-primary"
-              onclick="document.location='/about.html'">About Me</button>
+            <button type="button" class="btn btn-outline-primary" onclick="document.location='/about.html'">About
+              Me</button>
           </div>
         </div>
       </div>
@@ -505,7 +505,7 @@
         </div>
         <div class="row">
           <div class="col-12">
-            <div class="white-box d-sm-flex flex-wrap">
+            <div class="white-box tab-container">
               <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                 <!--TAB Nav 1-->
                 <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
@@ -521,21 +521,173 @@
                   data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages"
                   aria-selected="false">Copart</button>
               </div>
-              <div class="tab-content p-md-4" id="v-pills-tabContent">
-                <!--TAB Content 1-->
+              <!--START Tab Content -->
+              <div class="tab-content" id="v-pills-tabContent">
+                <!--START Tab Content 1-->
                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                   aria-labelledby="v-pills-home-tab">
-                  <div class="accordion-item">
-                    <!--Accordion Header 1-->
-                    <h2 class="accordion-header" id="flush-headingOne">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Genpact
-                      </button>
-                    </h2>
-                    <!--END Accordion Header 1-->
-                    <div id="flush-collapseOne" class="accordion-collapse collapse p-md-0 p-4"
-                      aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="tab-pane-container">
+                    <div class="tab-pane-left">
+                      <div class="d-flex mb-3">
+                        <div class="tab-icon">
+                          <img src="/assets/genpact-logo-square.jpeg" alt="">
+                        </div>
+                        <div class="ms-2">
+                          <h4>Web Content Specialist</h4>
+                          <h5>February 2020 - Present</h5>
+                        </div>
+                      </div>
+                      <div class="eyebrow-wrapper">
+                        <div class="eyebrow-blue-left">
+                          <p class="bold">Background:</p>
+                        </div>
+                      </div>
+                      <p>Worked for Genpact's Marketing as a Service (MaaS) team on the Baker Hughes account.</p>
+                      <p class="bold">Accomplishments:</p>
+                      <p>Had contract extended by Baker Hughes and added several team members, growing the account.
+                      </p>
+                      <div class="tab-image"><img src="/assets/screenshots/bakerhughes-screenshot.jpg" alt=""></div>
+                    </div>
+                    <div class="tab-pane-right">
+                      <h5>Skills</h5>
+                      <p>Web Content Management</p>
+                      <p>Web Design</p>
+                      <p>SEO</p>
+                      <p>CSS</p>
+                      <p>HTML</p>
+                      <h5>Marketing Stack</h4>
+                        <p>Drupal 8</p>
+                        <p>Bynder DAM</p>
+                        <p>Acquia DAM</p>
+                        <p>Marketo</p>
+                        <p>Google Analytics</p>
+                        <p>Kapost</p>
+                        <p>Figma</p>
+                        <p>Photoshop</p>
+                        <!--<div><button class="btn btn-primary-body">View Work</button></div>-->
+                    </div>
+                  </div>
+                </div>
+                <!-- END Tab Content 1 -->
+                <!-- START Tab Content 2 -->
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <div class="tab-pane-container">
+                    <div class="tab-pane-left">
+                      <div class="d-flex mb-3">
+                        <div class="tab-icon">
+                          <img src="/assets/bhn-logo-square.jpeg" alt="">
+                        </div>
+                        <div class="ms-2">
+                          <h4>Digital Marketing Specialist</h5>
+                            <h5>May 2019 – February 2020
+                          </h4>
+                        </div>
+                      </div>
+                      <div class="eyebrow-wrapper">
+                        <div class="eyebrow-blue-left">
+                          <p class="bold">Background:</p>
+                        </div>
+                      </div>
+                      <p>Joined Blackhawk Network in the marketing department as a Digital Marketing Specialist for
+                        the Lead Demand Generation team.</p>
+                      <p class="bold">Accomplishments:</p>
+                      <p>Executed the re-development of the current Blackhawk Network website as a part of a larger
+                        rebrand of the company. Development consisted of a complete overhaul of HTML/CSS templates in
+                        WordPress as well as editing some JS and PHP. New website became a lead generation engine by
+                        creating and embedding Marketo forms to pages, optimizing pages for SEO and simplifying
+                        information architecture for users.</p>
+                      <div class="tab-image"><img src="/assets/screenshots/bhn-screenshot.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="tab-pane-right">
+                      <h5>Skills</h5>
+                      <p>CSS</p>
+                      <p>HTML</p>
+                      <p>PHP</p>
+                      <p>JS</p>
+                      <h5>Marketing Stack</h5>
+                      <p>Drupal 8</p>
+                      <p>Wordpress</p>
+                      <p>Marketo</p>
+                      <p>Google Analytics</p>
+                      <p>Google Data Studio</p>
+                      <p>Google Tag Manager</p>
+                      <p>Photoshop</p>
+                      <p>Indesign</p>
+                      <p>Illustrator</p>
+                      <p>Google Ads</p>
+                      <p>LinkedIn Ads</p>
+                      <p>Facebook Ads</p>
+                      <p>AdRoll</p>
+                      <p>Terminus</p>
+                      <!--<div><button class="btn btn-primary-body">View Work</button></div>-->
+                    </div>
+                  </div>
+                </div>
+                <!-- END Tab Content 2 -->
+                <!-- START Tab Content 3 -->
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  <div class="tab-pane-container">
+                    <div class="tab-pane-left">
+                      <div class="d-flex mb-3">
+                        <div class="tab-icon">
+                          <img src="/assets/copart-logo-square.jpeg" alt="">
+                        </div>
+                        <div class="ms-2">
+                          <h4>Online Marketing Coordinator</h4>
+                          <h5>May 2018 – May 2019</h5>
+                        </div>
+                      </div>
+                      <div class="eyebrow-wrapper">
+                        <div class="eyebrow-blue-left">
+                          <p class="bold">Background:</p>
+                        </div>
+                      </div>
+                      <p>Started as an intern at Copart's headquarters in Dallas, Texas in the marketing department. I
+                        was then promoted to Online Marketing Coordinator after 6 months.</p>
+                      <p class="bold">Accomplishments:</p>
+                      <p>Voted "Most Outstanding Marketing Team Member" by peers in August 2018.</p>
+                      <div class="tab-image"><img src="/assets/screenshots/copart-screenshot.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="tab-pane-right">
+                      <h5>Skills</h5>
+                      <p>CSS</p>
+                      <p>HTML</p>
+                      <h5>Marketing Stack</h5>
+                      <p>Drupal</p>
+                      <p>Wordpress</p>
+                      <p>Adobe Analytics</p>
+                      <p>Google Analytics</p>
+                      <p>Revive Adserver</p>
+                      <p>Survey Monkey</p>
+                      <p>Basecamp</p>
+                      <!--<div><button class="btn btn-primary-body">View Work</button></div>-->
+                    </div>
+                  </div>
+                </div>
+                <!-- END Tab Content 3 -->
+              </div>
+              <!-- END Tab Content -->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="white-box">
+              <!-- START Accordion -->
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <!-- START Accordion 1 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Genpact
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
                       <div class="tab-pane-left">
                         <div class="d-flex mb-3">
                           <div class="tab-icon">
@@ -555,8 +707,7 @@
                         <p class="bold">Accomplishments:</p>
                         <p>Had contract extended by Baker Hughes and added several team members, growing the account.
                         </p>
-                        <div class="tab-image"><img src="/assets/screenshots/bakerhughes-screenshot.jpg"
-                              alt=""></div>
+                        <div class="tab-image"><img src="/assets/screenshots/bakerhughes-screenshot.jpg" alt=""></div>
                       </div>
                       <div class="tab-pane-right">
                         <h5>Skills</h5>
@@ -579,20 +730,18 @@
                     </div>
                   </div>
                 </div>
-                <!--END Tab Content 1-->
-                <!--Tab Content 2-->
-                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                  <div class="accordion-item">
-                    <!--Accordion Header 2-->
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Blackhawk Network
-                      </button>
-                    </h2>
-                    <!--END Accordion Header 2-->
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse p-md-0 p-4"
-                      aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <!-- END Accordion 1 -->
+                <!-- START Accordion 2 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Blackhawk Network
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
                       <div class="tab-pane-left">
                         <div class="d-flex mb-3">
                           <div class="tab-icon">
@@ -646,20 +795,18 @@
                     </div>
                   </div>
                 </div>
-                <!--END Tab Content 2-->
-                <!--Tab Content 3-->
-                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                  <div class="accordion-item">
-                    <!--Accordion Header 3-->
-                    <h2 class="accordion-header" id="flush-headingThree">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Copart
-                      </button>
-                    </h2>
-                    <!--END Accordion Header 3-->
-                    <div id="flush-collapseThree" class="accordion-collapse collapse p-md-0 p-4"
-                      aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <!-- END Accordion 2 -->
+                <!-- START Accordion 3 -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Copart
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
                       <div class="tab-pane-left">
                         <div class="d-flex mb-3">
                           <div class="tab-icon">
@@ -699,16 +846,17 @@
                     </div>
                   </div>
                 </div>
-                <!--END Tab Content 3-->
               </div>
+              <!-- END Accordion 3 -->
             </div>
+            <!-- END Accordion -->
           </div>
         </div>
       </div>
     </div>
     <div class="container text-center web-icons">
       <div class="row pb-2 pb-md-4">
-        <h3>This website was custom built and designed using</h3>
+        <h3>This website was custom designed and coded using</h3>
       </div>
       <div class="row">
         <div class="col-4 col-md py-2 py-md-0">
@@ -768,7 +916,12 @@
             </svg></a>
         </div>
         <div class="col-4 col-md py-2 py-md-0">
-          <a href="https://www.figma.com" target="_blank"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="figma"><title>Figma</title><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z"/></svg></a>
+          <a href="https://www.figma.com" target="_blank"><svg role="img" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" class="figma">
+              <title>Figma</title>
+              <path
+                d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z" />
+            </svg></a>
         </div>
       </div>
     </div>

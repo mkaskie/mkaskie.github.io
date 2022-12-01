@@ -16,3 +16,7 @@
 @import 'tabs-new';
 @import 'tabs-old';
 @import 'forms';
+
+html {
+  scroll-padding-top: 80px;
+}

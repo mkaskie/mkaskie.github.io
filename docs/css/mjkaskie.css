@@ -11495,6 +11495,7 @@ END Old Work Section */
   border: none;
   border-radius: 1.5rem;
   text-align: center;
+  min-height: 400px;
 }
 
 .card-header {
@@ -11626,15 +11627,19 @@ END Old Work Section */
   color: #4B80C3;
 }
 
-.nav-pills {
-  display: none;
+.tab-container {
+  display: flex;
 }
-@media (min-width: 768px) {
-  .nav-pills {
-    display: flex;
-    flex: 0 0 auto;
-    width: 25%;
+@media (max-width: 768px) {
+  .tab-container {
+    display: none;
   }
+}
+
+.nav-pills {
+  display: flex;
+  flex: 0 0 auto;
+  width: 25%;
 }
 .nav-pills .nav-link {
   display: flex;
@@ -11686,6 +11691,21 @@ END Old Work Section */
   }
 }
 
+.tab-pane-container {
+  display: flex;
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .tab-pane-container {
+    display: flex;
+  }
+}
+@media (max-width: 991px) {
+  .tab-pane-container {
+    flex-wrap: wrap;
+  }
+}
+
 .tab-pane-left {
   width: 100%;
 }
@@ -11724,55 +11744,69 @@ END Old Work Section */
   background-color: #c7e0ff;
 }
 
-.accordion-header {
-  display: flex;
-}
 @media (min-width: 768px) {
-  .accordion-header {
+  .accordion {
     display: none;
   }
 }
 
-.accordion-item:last-of-type .accordion-collapse {
+.accordion-header {
+  display: flex;
+}
+
+.accordion-item {
   border-bottom: 6px solid #4B80C3;
 }
-@media (min-width: 768px) {
-  .accordion-item:last-of-type .accordion-collapse:nth-child(-n+2) {
-    border-bottom: 0;
-  }
+
+.accordion-body {
+  padding: 2rem;
 }
+
+/*
 
 .accordion-item:first-of-type .accordion-button {
-  border-bottom: 6px solid #4B80C3;
+    border-bottom: 6px solid $body-color;
 }
 
-.accordion-item:last-of-type .accordion-button.collapsed:nth-child(-n+2) {
-  border-bottom: 6px solid #4B80C3;
+.accordion-item:last-of-type .accordion-collapse {
+    border-bottom: 6px solid $body-color;
+
+    &:nth-child(-n+2) {
+        border-bottom: 6px solid $body-color;
+    }
 }
 
-.collapse:not(.show) {
-  display: none;
-}
-@media (min-width: 768px) {
-  .collapse:not(.show) {
-    display: flex;
-  }
-}
-@media (max-width: 991px) {
-  .collapse:not(.show) {
-    flex-wrap: wrap;
-  }
+.accordion-item:last-of-type .accordion-button.collapsed {
+    &:nth-child(-n+2) {
+        border-bottom: 6px solid $body-color;
+    }
 }
 
-.fade:not(.show) {
-  opacity: 1;
-}
-@media (min-width: 768px) {
-  .fade:not(.show) {
-    opacity: 0;
-  }
+.collapse {
+    &:not(.show) {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: flex;
+        }
+
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+        }
+    }
 }
 
+.fade {
+    &:not(.show) {
+        opacity: 1;
+
+        @media (min-width: 768px) {
+            opacity: 0;
+        }
+    }
+}
+
+*/
 .bold {
   font-weight: 600;
 }
@@ -11870,4 +11904,8 @@ END Old Work Section */
 .form-control {
   border-radius: 6px;
   border: 1px solid #f9fbfd;
+}
+
+html {
+  scroll-padding-top: 80px;
 }
