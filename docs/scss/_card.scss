@@ -1,3 +1,11 @@
+.card-wrapper {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .card {
   background-color: #e0eeff;
   color: $body-color;

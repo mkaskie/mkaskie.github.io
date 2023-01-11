@@ -11489,6 +11489,14 @@ END Old Work Section */
   background-color: #f9fbfd;
 }
 
+.card-wrapper {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.card-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 .card {
   background-color: #e0eeff;
   color: #4B80C3;
