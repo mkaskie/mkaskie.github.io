@@ -1,11 +1,33 @@
 /* Style the row and containers */
 
 .about {
-  .row {
-    flex-wrap: wrap-reverse;
-  }
   h3 {
-    font-weight: 400;
+    font-weight: 600;
+  }
+
+  img {
+    padding: 0 2rem 2rem 0;
+  }
+
+  .bio {
+    padding-right: 2rem;
+
+    p {
+      color: #869ab8
+    }
+
+    a {
+      color: $body-color;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  svg {
+    margin-left: 1rem;
   }
 }
 
@@ -17,14 +39,9 @@
 
 .grid-right {
   background-color: #F9FBFD;
+
   .wrapper {
     padding: 6rem 0;
-  }
-  a {
-    color: #869ab8;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
 
@@ -33,24 +50,24 @@
 .about-list {
   list-style: none;
   padding-left: 0;
+  font-size: .8rem;
+
   svg {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
+
+  margin-bottom: 2rem;
 }
 
 .about-list-item {
   display: flex;
   padding: .2rem .6rem;
+
   &:hover {
     background-color: $body-color-secondary;
     border-radius: 4px;
     color: $body-color;
-  }
-  a {
-    &:hover {
-      color: $body-color;
-    }
   }
 }
 
@@ -69,8 +86,52 @@
     display: inline-block;
     padding: .5rem 1rem;
     border-radius: 1.5rem;
+
     &:hover {
-        background-color: darken($body-color-secondary, 5%);
+      background-color: darken($body-color-secondary, 5%);
     }
+  }
+}
+
+.about-list-container {
+  background-color: #F9FBFD;
+  padding: 3rem 3rem;
+  border-radius: 6px;
+
+  p {
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+}
+
+.download-resume {
+  margin: 2rem;
+  padding: .75rem 0;
+  border-radius: 6px;
+  border: 2px solid $body-color;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    background-color: $body-color-secondary;
+    color: $body-color;
+  }
+
+  svg {
+    margin-left: 1rem;
+  }
+}
+
+.view-experience {
+  margin-right: 2rem;
+  padding: .75rem 0;
+  border-radius: 6px;
+  border: 2px solid $body-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    background-color: $body-color-secondary;
+    color: $body-color;
   }
 }

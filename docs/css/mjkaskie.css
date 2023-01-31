@@ -11337,11 +11337,27 @@ footer ul {
 
 END Old Hero */
 /* Style the row and containers */
-.about .row {
-  flex-wrap: wrap-reverse;
-}
 .about h3, .about .h3 {
-  font-weight: 400;
+  font-weight: 600;
+}
+.about img {
+  padding: 0 2rem 2rem 0;
+}
+.about .bio {
+  padding-right: 2rem;
+}
+.about .bio p {
+  color: #869ab8;
+}
+.about .bio a {
+  color: #4B80C3;
+  text-decoration: underline;
+}
+.about .bio a:hover {
+  text-decoration: underline;
+}
+.about svg {
+  margin-left: 1rem;
 }
 
 .grid-left .wrapper {
@@ -11354,21 +11370,17 @@ END Old Hero */
 .grid-right .wrapper {
   padding: 6rem 0;
 }
-.grid-right a {
-  color: #869ab8;
-}
-.grid-right a:hover {
-  text-decoration: underline;
-}
 
 /* Style the Fast facts list */
 .about-list {
   list-style: none;
   padding-left: 0;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
 }
 .about-list svg {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .about-list-item {
@@ -11378,9 +11390,6 @@ END Old Hero */
 .about-list-item:hover {
   background-color: #e0eeff;
   border-radius: 4px;
-  color: #4B80C3;
-}
-.about-list-item a:hover {
   color: #4B80C3;
 }
 
@@ -11401,6 +11410,46 @@ END Old Hero */
 }
 .hobbies p:hover {
   background-color: #c7e0ff;
+}
+
+.about-list-container {
+  background-color: #F9FBFD;
+  padding: 3rem 3rem;
+  border-radius: 6px;
+}
+.about-list-container p {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.download-resume {
+  margin: 2rem;
+  padding: 0.75rem 0;
+  border-radius: 6px;
+  border: 2px solid #4B80C3;
+  display: flex;
+  justify-content: center;
+}
+.download-resume:hover {
+  background-color: #e0eeff;
+  color: #4B80C3;
+}
+.download-resume svg {
+  margin-left: 1rem;
+}
+
+.view-experience {
+  margin-right: 2rem;
+  padding: 0.75rem 0;
+  border-radius: 6px;
+  border: 2px solid #4B80C3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view-experience:hover {
+  background-color: #e0eeff;
+  color: #4B80C3;
 }
 
 /* BEGIN Style individual Work pages */
@@ -11517,7 +11566,11 @@ END Old Work Section */
 }
 
 .card-body {
-  padding: 2rem;
+  padding: 2rem 4rem;
+  text-align: left;
+}
+.card-body svg {
+  margin-right: 1rem;
 }
 
 .btn {
@@ -11682,6 +11735,7 @@ END Old Work Section */
 
 .tab-content {
   width: 100%;
+  min-height: 85vh;
 }
 @media (min-width: 768px) {
   .tab-content {
@@ -11720,11 +11774,14 @@ END Old Work Section */
 @media (min-width: 992px) {
   .tab-pane-left {
     flex: 0 0 auto;
-    width: 65%;
+    width: 70%;
   }
 }
 .tab-pane-left img {
   width: 100%;
+}
+.tab-pane-left ul {
+  color: #869ab8;
 }
 
 .tab-pane-right {
@@ -11736,7 +11793,7 @@ END Old Work Section */
 @media (min-width: 992px) {
   .tab-pane-right {
     flex: 0 0 auto;
-    width: 35%;
+    width: 30%;
     margin-left: 2rem;
     margin-top: 0;
   }

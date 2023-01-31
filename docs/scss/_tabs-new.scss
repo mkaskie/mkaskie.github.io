@@ -65,7 +65,7 @@
 
 .tab-content {
     width: 100%;
-
+    min-height: 85vh;
     @media (min-width: 768px) {
         display: flex;
         width: 75%;
@@ -101,11 +101,14 @@
 
     @media (min-width: 992px) {
         flex: 0 0 auto;
-        width: 65%;
+        width: 70%;
     }
 
     img {
         width: 100%;
+    }
+    ul {
+        color: #869ab8;
     }
 }
 
@@ -117,7 +120,7 @@
 
     @media (min-width: 992px) {
         flex: 0 0 auto;
-        width: 35%;
+        width: 30%;
         margin-left: 2rem;
         margin-top: 0;
     }
