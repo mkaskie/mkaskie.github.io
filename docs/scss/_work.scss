@@ -1,23 +1,35 @@
-/* BEGIN Style individual Work pages */
-
-.work-page {
-  h2 {
-    font-weight: 500;
-    margin-bottom: 2rem;
+.work {
+  /*background: linear-gradient(180deg, $body-color 60%, lighten($body-color-secondary, 4%) 40%);*/
+  h4 {
+    font-size: 1.25rem;
+    color: $body-color;
+  }
+  background-color: #F9FBFD;
+  .box {
+    min-height: 350px;
+    padding: 4rem;
+    background-color: white;
+    border-radius: 8px;
+    margin-right: 2rem;
+    border-left: 10px solid #99DA98;
+    p {
+      color: #869AB8;
+    }
+    a {
+      border-bottom: 4px solid $body-color;
+      &:hover {
+        color: $body-color;
+      }
+    }
   }
   img {
-    border-radius: 6px;
-    filter: drop-shadow(0px 10px 60px rgba(0, 0, 0, 0.2));
-    width: 90%;
-  }
-  .white-box {
-    background-color: $body-color-secondary;
-    border-radius: 6px;
-    padding: 2rem;
+     border-radius: 8px;
+     transition: all .65s;
+     &:hover {
+       transform: scale(1.05);
+     }
   }
 }
-
-/* END Style individual Work pages */
 
 /* BEGIN Old Work Section
 
@@ -46,58 +58,3 @@
 END Old Work Section */
 
 /* Style icons for "This website was custom built" section */ 
-
-.web-icons {
-  max-width: 1000px;
-  padding: 4rem;
-  h3 {
-    color: rgba($body-color, .6);
-  }
-  img {
-    height: 40px;
-  }
-  svg {
-    height: 40px;
-    fill: rgba($body-color, .6);
-  }
-  .bootstrap {
-    &:hover {
-      fill: #880BFB;
-    }
-  }
-  .gulp {
-    &:hover {
-      fill: #EB4A4C;
-    }
-  }
-  .html {
-    &:hover {
-      fill: #E54D26;
-    }
-  }
-  .css {
-    &:hover {
-      fill: #0A74B8;
-    }
-  }
-  .sass {
-    &:hover {
-      fill: #CF679A;
-    }
-  }
-  .js {
-    &:hover {
-      fill: #DAB92B;
-    }
-  }
-  .visual-studio {
-    &:hover {
-      fill: #39AAF3;
-    }
-  }
-  .figma {
-    &:hover {
-      fill: #EA4C1E;
-    }
-  }
-}

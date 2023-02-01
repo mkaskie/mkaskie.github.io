@@ -1,6 +1,7 @@
 .card-wrapper {
   flex-wrap: nowrap;
   overflow-x: auto;
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -13,22 +14,54 @@
   border-radius: 1.5rem;
   text-align: center;
   min-height: 400px;
-}
 
-.card-header {
-  padding: 2rem;
-  border-bottom: 6px solid #f9fbfd;
-  background-color: #e0eeff;
-  font-weight: 600;
-  &:first-child {
-    border-radius: 1.5rem 1.5rem 0 0;
+  .card-header {
+    padding: 2rem;
+    border-bottom: 6px solid #f9fbfd;
+    background-color: #e0eeff;
+    font-weight: 600;
+
+    &:first-child {
+      border-radius: 1.5rem 1.5rem 0 0;
+    }
+  }
+
+  .card-body {
+    padding: 2rem 4rem;
+    text-align: left;
+
+    svg {
+      margin-right: 1rem;
+    }
   }
 }
 
-.card-body {
-  padding: 2rem 4rem;
-  text-align: left ;
-  svg {
-    margin-right: 1rem;
+.card-new {
+  background-color: white;
+  color: $body-color;
+  min-height: 550px;
+  .card-new-title {
+    font-weight: 600;
+  }
+
+  .card-new-body {
+    padding: 3rem 2rem;
+    text-align: left;
+    color: $body-color;
+  }
+  .card-new-text {
+    color: #869AB8;
+  }
+  a {
+    color:  $body-color;
+    border-bottom: 4px solid  $body-color;
+  }
+  img {
+    border-radius: 0;
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
   }
 }

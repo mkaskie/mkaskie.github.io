@@ -1,0 +1,54 @@
+.web-icons {
+  max-width: 1000px;
+  padding: 4rem;
+  h3 {
+    color: rgba($body-color, .6);
+  }
+  img {
+    height: 40px;
+  }
+  svg {
+    height: 40px;
+    fill: rgba($body-color, .6);
+  }
+  .bootstrap {
+    &:hover {
+      fill: #880BFB;
+    }
+  }
+  .gulp {
+    &:hover {
+      fill: #EB4A4C;
+    }
+  }
+  .html {
+    &:hover {
+      fill: #E54D26;
+    }
+  }
+  .css {
+    &:hover {
+      fill: #0A74B8;
+    }
+  }
+  .sass {
+    &:hover {
+      fill: #CF679A;
+    }
+  }
+  .js {
+    &:hover {
+      fill: #DAB92B;
+    }
+  }
+  .visual-studio {
+    &:hover {
+      fill: #39AAF3;
+    }
+  }
+  .figma {
+    &:hover {
+      fill: #EA4C1E;
+    }
+  }
+}
