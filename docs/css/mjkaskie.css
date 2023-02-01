@@ -11461,11 +11461,11 @@ END Old Hero */
   color: #4B80C3;
 }
 .work .box {
+  width: 80%;
   min-height: 350px;
-  padding: 4rem;
+  padding: 3rem 2rem;
   background-color: white;
   border-radius: 8px;
-  margin-right: 2rem;
   border-left: 10px solid #99DA98;
 }
 .work .box p {
@@ -11511,7 +11511,8 @@ END Old Hero */
 
 END Old Work Section */
 /* Style icons for "This website was custom built" section */
-.work-page h2, .work-page .h2 {
+.work-page h1, .work-page .h1 {
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 2rem;
 }
@@ -11524,6 +11525,15 @@ END Old Work Section */
   background-color: #e0eeff;
   border-radius: 6px;
   padding: 2rem;
+}
+.work-page .live-link {
+  margin-top: 2rem;
+}
+.work-page .live-link a {
+  border-bottom: 4px solid #4B80C3;
+}
+.work-page .live-link a:hover {
+  color: #4B80C3;
 }
 
 .web-icons {
@@ -11957,6 +11967,15 @@ END Old Work Section */
 .form-control {
   border-radius: 6px;
   border: 1px solid #f9fbfd;
+}
+
+.blue-tag {
+  font-size: 0.8rem;
+  background-color: #e0eeff;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 html {

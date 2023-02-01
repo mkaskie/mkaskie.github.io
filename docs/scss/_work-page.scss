@@ -1,5 +1,6 @@
 .work-page {
-  h2 {
+  h1 {
+    font-size: 1rem;
     font-weight: 500;
     margin-bottom: 2rem;
   }
@@ -12,5 +13,14 @@
     background-color: $body-color-secondary;
     border-radius: 6px;
     padding: 2rem;
+  }
+  .live-link {
+    margin-top: 2rem;
+    a {
+      border-bottom: 4px solid $body-color;
+      &:hover {
+        color: $body-color;
+      }
+    }
   }
 }
