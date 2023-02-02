@@ -11440,6 +11440,7 @@ END Old Hero */
 
 .view-experience {
   margin-right: 2rem;
+  margin-bottom: 4rem;
   padding: 0.75rem 0;
   border-radius: 6px;
   border: 2px solid #4B80C3;
@@ -11887,7 +11888,7 @@ END Old Work Section */
 }
 
 .accordion-item {
-  border-bottom: 6px solid #4B80C3;
+  border-bottom: 6px solid #F9FBFD;
 }
 
 .accordion-body {
