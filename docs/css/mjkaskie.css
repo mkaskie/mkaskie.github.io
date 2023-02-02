@@ -11337,11 +11337,12 @@ footer ul {
 
 END Old Hero */
 /* Style the row and containers */
+.about .btn {
+  width: 100%;
+  border-radius: 6px;
+}
 .about h3, .about .h3 {
   font-weight: 600;
-}
-.about img {
-  padding: 0 2rem 2rem 0;
 }
 .about .bio {
   padding-right: 2rem;
@@ -11372,6 +11373,16 @@ END Old Hero */
 }
 
 /* Style the Fast facts list */
+.about-list-container {
+  background-color: #e0eeff;
+  padding: 3rem 3rem;
+  border-radius: 6px;
+}
+.about-list-container p {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
 .about-list {
   list-style: none;
   padding-left: 0;
@@ -11386,11 +11397,12 @@ END Old Hero */
 .about-list-item {
   display: flex;
   padding: 0.2rem 0.6rem;
+  border-left: 4px solid #4B80C3;
 }
 .about-list-item:hover {
-  background-color: #e0eeff;
-  border-radius: 4px;
+  background-color: #F9FBFD;
   color: #4B80C3;
+  border-left: 4px solid #99DA98;
 }
 
 .about-list-icon {
@@ -11403,23 +11415,14 @@ END Old Hero */
 
 .hobbies p {
   font-size: 0.8rem;
-  background-color: #e0eeff;
+  background-color: #F9FBFD;
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 1.5rem;
-}
-.hobbies p:hover {
-  background-color: #c7e0ff;
-}
-
-.about-list-container {
-  background-color: #F9FBFD;
-  padding: 3rem 3rem;
-  border-radius: 6px;
-}
-.about-list-container p {
-  font-weight: 500;
-  margin-bottom: 1rem;
+  /*
+  &:hover {
+    background-color: darken($body-color-secondary, 5%);
+  }*/
 }
 
 .download-resume {
@@ -11439,14 +11442,19 @@ END Old Hero */
 }
 
 .view-experience {
-  margin-right: 2rem;
-  margin-bottom: 4rem;
+  margin: 0 0 4rem 0;
   padding: 0.75rem 0;
   border-radius: 6px;
   border: 2px solid #4B80C3;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .view-experience {
+    margin-right: 2rem;
+    margin-bottom: 4rem;
+  }
 }
 .view-experience:hover {
   background-color: #e0eeff;
