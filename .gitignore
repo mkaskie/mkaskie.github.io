@@ -16,6 +16,5 @@ node_modules/
 *.code-workspace
 
 #Gulp
-gulpfile.js
 
 #Test Files
