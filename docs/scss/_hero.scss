@@ -1,7 +1,10 @@
 /* BEGIN Home Hero */
 
 .hero {
-  background-color: $body-color-secondary;
+  /*background-color: $body-color-secondary;*/
+  background-image: url("/assets/bg-new.png");
+  background-size: auto;
+  background-repeat: no-repeat;
   a {
     color: #869ab8;
     &:hover {
@@ -9,11 +12,11 @@
     }
   }
   h1 {
-    font-size: 2rem;
     font-weight: 600;
   }
+
   h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
   }
 }
