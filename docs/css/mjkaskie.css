@@ -10890,10 +10890,11 @@ footer ul {
 
 /* BEGIN Home Hero */
 .hero {
+  background: linear-gradient(180deg, #E0EEFF 0%, #F9FBFD 69.11%);
   /*background-color: $body-color-secondary;*/
-  background-image: url("/assets/bg-old.png");
+  /*background-image: url("/assets/bg-old.png");
   background-size: auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 .hero a {
   color: #869ab8;
@@ -11287,22 +11288,7 @@ END Old Work Section */
 .card-new {
   background-color: white;
   color: #4B80C3;
-  min-height: 550px;
-}
-.card-new .card-new-title {
-  font-weight: 600;
-}
-.card-new .card-new-body {
-  padding: 3rem 2rem;
-  text-align: left;
-  color: #4B80C3;
-}
-.card-new .card-new-text {
-  color: #869AB8;
-}
-.card-new a {
-  color: #4B80C3;
-  border-bottom: 4px solid #4B80C3;
+  min-height: 560px;
 }
 .card-new img {
   border-radius: 0;
@@ -11310,6 +11296,40 @@ END Old Work Section */
 }
 .card-new img:hover {
   transform: none;
+}
+
+.card-new-body {
+  padding: 3rem 2rem;
+  text-align: left;
+  color: #4B80C3;
+}
+
+.card-new-text {
+  color: #869AB8;
+}
+
+.learn-more-link {
+  font-weight: 500;
+  color: #4B80C3;
+  padding-bottom: 20px;
+  display: inline-block;
+  position: relative;
+}
+.learn-more-link:hover {
+  color: #4B80C3;
+}
+.learn-more-link::before {
+  transition: ease-out 0.25s;
+  height: 4px;
+  content: "";
+  position: absolute;
+  background-color: #4B80C3;
+  width: 100%;
+  bottom: 8px;
+}
+.learn-more-link:hover::before {
+  width: 100%;
+  height: 8px;
 }
 
 .btn {
@@ -11698,6 +11718,18 @@ END Old Work Section */
   margin-right: 1rem;
 }
 
+.fadeIn {
+  -webkit-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 html {
   scroll-padding-top: 80px;
 }

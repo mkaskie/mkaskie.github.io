@@ -1,10 +1,11 @@
 /* BEGIN Home Hero */
 
 .hero {
+  background: linear-gradient(180deg, #E0EEFF 0%, #F9FBFD 69.11%);
   /*background-color: $body-color-secondary;*/
-  background-image: url("/assets/bg-old.png");
+  /*background-image: url("/assets/bg-old.png");
   background-size: auto;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
   a {
     color: #869ab8;
     &:hover {
